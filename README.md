@@ -40,6 +40,8 @@ Raspbian on Raspberry Pi already has Python 3.2 so it should work out of the box
 
 ## 2. Start logging
 
+**Don't use Cygwin for this program under Windows, it doesn't seems to pass keyboard interrupt correctly to the program, and cause it to terminate without killing its children**
+
 ### Option 1: Log all channels and group chats you follow on Twitch
 
 Run `python3 log_all.py` in your terminal.
@@ -76,12 +78,12 @@ The rest is the same with Option 1
 
 # Resource Usage
 
-This program should take minimum amount of memory and CPU usage while running.
+This program should consume minimum amount of memory and CPU while running.
 
 While logging 82 channels on Raspberry Pi 2 with 1GB memory and 900MHz ARM Cortex-A7 CPU, the program uses around 4.5MB of memory per logger and almost no CPU usage at all, with load average below 0.05
 
-The resource impact should be even less when running on a proper PC.
+The resource impact should be even less when running on a full-sized PC.
 
 ![alt tag](http://i.imgur.com/c1lN5uJ.png)
 
-I do recommend using a Raspberry Pi 2 as a logging machine and let this program run 24/7, this way you have a complete log of twitch chat, and avoid the cost of running a full-sized PC.
+I do recommend using a Raspberry Pi 2 as a logging machine and let the program run 24/7, this way you have a complete log of twitch chat, and avoid the cost of running a full-sized PC.
