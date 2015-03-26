@@ -4,7 +4,7 @@ A lightweight Twitch chat logger that can keep a record of all channels and grou
 
 * Log all your followed Twitch channels and group chats
 
-* Or just log from a list of select channels that you provide
+* Or just log from a list of channels that you provide
 
 * Automatically select chat server (regular, event, group)
 
