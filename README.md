@@ -30,4 +30,4 @@ Raspbian on Raspberry Pi already has Python 3.2 so it should work out of the box
 
 * Open config.txt in your favorite text editor
 
-* Replace *username* field with your own twitch username and 
+* Add your own twitch username and oauth. You can get your oauth at http://twitchapps.com/tmi/
