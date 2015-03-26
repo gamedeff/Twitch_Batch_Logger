@@ -73,3 +73,6 @@ The program will verify each channel to make sure it exists and determine its ty
 ![alt tag](http://i.imgur.com/GVF9u7M.png)
 
 The rest is the same with Option 1
+
+# Resource Usage
+
