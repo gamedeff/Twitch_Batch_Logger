@@ -79,3 +79,6 @@ The rest is the same with Option 1
 This program should take minimum amount of memory and CPU usage while running.
 
 While logging 82 channels on Raspberry Pi, 
+
+![alt tag](http://i.imgur.com/36PxDnc.png)
+
