@@ -1,7 +1,7 @@
 [Settings]
 
 ; Your twitch username
-username = Twitch_Plays_3DS
+username = dekuNukem
  
 ; Your twitch oauth, grab yours at www.twitchapps.com/tmi
 ; and change it to yours
