@@ -42,6 +42,9 @@ Raspbian on Raspberry Pi already has Python 3.2 so it should work out of the box
 
 ### Log all channels and group chats you follow on Twitch
 
-Type
+Run `python3 log_all.py` in your terminal.
 
-`python3 log_all.py`
+The program will search for all your followed channels and group chats you're in and add loggers for each of them. It might take a while depending on the number of channels you follow.
+
+![alt tag](http://i.imgur.com/Z3jmhEC.png)
+
