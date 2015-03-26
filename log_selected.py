@@ -3,7 +3,6 @@ import sys
 import time
 import json
 import subprocess
-import signal
 from urllib.request import urlopen
 from urllib.error import HTTPError
 from copy import deepcopy
@@ -62,15 +61,14 @@ def add_logger(channel, channel_type):
         running_logger[channel] = subprocess.Popen([sys.executable, "-u", logger_path, channel, channel_type], stdout=devnull)
         time.sleep(0.5)
 
-# kill all running loggers then exit upon keyboard interrupt
-def signal_handler(signal, frame):
+# kill all running loggers then exit
+def stop():
     print("killing child processes...", file=sys.stderr)
     temp = deepcopy(running_logger)
     for key in temp:
         remove_logger(key)
     sys.exit(0)
 
-signal.signal(signal.SIGINT, signal_handler)
 current_directory = os.path.dirname(os.path.abspath(__file__))
 channel_list = read_channels()
 channel_type_dict = {}
@@ -86,14 +84,15 @@ for item in channel_list:
         continue
     print("...ok")
     channel_type_dict[item] = channel_type
-
 print()
 
-for key in channel_type_dict:
-    add_logger(key, channel_type_dict[key])
-
-while 1:
-    time.sleep(60)
+try:
+	for key in channel_type_dict:
+	    add_logger(key, channel_type_dict[key])
+	while 1:
+	    time.sleep(60)
+except KeyboardInterrupt:
+	stop()
 
 
 
