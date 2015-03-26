@@ -31,12 +31,14 @@ def read_channels():
     with open(file_path) as channel_list_file:
         while 1:
             this_line = channel_list_file.readline()
-            this_line = this_line.replace(' ', '').replace('\n', '').lower()
+            this_line = this_line.replace(' ', '').lower()
             if this_line == '':
                 break
             if this_line[0] == ";":
                 continue
-            channel_list.append(this_line)
+            this_line = this_line.replace('\n', '')
+            if len(this_line) > 0:
+                channel_list.append(this_line)
     return channel_list
 
 def is_group_chat(name):
