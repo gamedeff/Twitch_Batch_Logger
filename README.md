@@ -26,7 +26,7 @@ Raspbian on Raspberry Pi already has Python 3.2 so it should work out of the box
 
 # How To Use
 
-## 1. Setting up your configuration file
+## 1. Set up your configuration file
 
 * Open config.txt in your favorite text editor
 
