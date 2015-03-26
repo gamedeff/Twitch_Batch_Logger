@@ -82,6 +82,6 @@ While logging 82 channels on Raspberry Pi 2 with 1GB memory and 900MHz ARM Corte
 
 The resource impact should be even less when running on a proper PC.
 
-![alt tag](http://i.imgur.com/36PxDnc.png)
+![alt tag](http://i.imgur.com/c1lN5uJ.png)
 
 I do recommend using a Raspberry Pi 2 as a logging machine and let this program run 24/7, this way you have a complete log of twitch chat, and avoid the cost of running a full-sized PC.
