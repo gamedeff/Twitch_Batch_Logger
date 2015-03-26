@@ -4,7 +4,6 @@
 username = dekuNukem
  
 ; Your twitch oauth, grab yours at www.twitchapps.com/tmi
-; and change it to yours
 oauth = oauth:x5qauh1fniapl5j7vqeaj4ep7p6k1v
 
 ; Change this to 1 to save additional chat information
