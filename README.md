@@ -1,4 +1,4 @@
-A lightweight Twitch chat logger that can keep a record of all channels and group chats you follow on Twitch, or just a select few from a list that you provide.
+A lightweight Twitch chat logger that logs all channels and group chats you follow on Twitch, or just a select few from a list that you provide.
 
 # Features
 
