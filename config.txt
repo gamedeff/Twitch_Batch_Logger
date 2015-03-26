@@ -1,0 +1,31 @@
+[Settings]
+
+; Your twitch username
+username = Twitch_Plays_3DS
+ 
+; Your twitch oauth, grab yours at www.twitchapps.com/tmi
+; and change it to yours
+oauth = oauth:x5qauh1fniapl5j7vqeaj4ep7p6k1v
+
+; Change this to 1 to save additional chat information
+; including message color, user identity(mod/sub/staff), 
+; sub notification, timeout/submode/clearchat/slowmode 
+; notifications, etc.
+record_raw = 0
+
+; what kind of timestamp to use
+; 0 for unix timestamp: 1427139635.0058
+; 1 for human readable timestamp in UTC: 2015-03-23T19:40:35Z
+; 2 for human readable timestamp in your local time: 2015-03-23T14:40:35-05:00
+timestamp_format = 1
+
+; Version of TWITCHCLIENT request
+; leave this alone if you don't know what it is
+twitchclient_version = 0
+
+; Chat server addresses
+; those are the ones that works for me
+; you can also change it based on twitchstatus.com/#chat
+regular_chat_server = irc.twitch.tv:6667
+group_chat_server = 199.9.253.119:80
+event_chat_server = 192.16.64.143:80
