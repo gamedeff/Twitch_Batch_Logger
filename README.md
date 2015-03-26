@@ -40,7 +40,10 @@ Raspbian on Raspberry Pi already has Python 3.2 so it should work out of the box
 
 ## 2. Start logging
 
-**Don't use Cygwin for this program under Windows, it doesn't seems to pass keyboard interrupt correctly to the program, and cause it to terminate without killing its children**
+
+**Warning: Do not use Cygwin for this program under Windows.
+it's a known issue that it doesn't pass keyboard interrupt correctly and will cause this program to terminate without killing its spawned loggers**
+
 
 ### Option 1: Log all channels and group chats you follow on Twitch
 
