@@ -14,6 +14,8 @@ A lightweight Twitch chat logger that can keep a record of all channels and grou
 
 * Low CPU and memory usage
 
-* Only Python 3.2+ needed
-
 * Tested on Windows 7 64-bit, OS X Yosemite, and Raspbian on Raspberry Pi
+
+# Requirements
+
+Only Python 3.2+ is needed.
