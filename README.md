@@ -1,5 +1,4 @@
-Twitch Batch Logger is a lightweight Twitch chat logger that can be used to record multiple Twitch chats simultaneously.
-
+Twitch Batch Logger is a lightweight Twitch chat logger that can be used to keep a record of all the channels and group chats you follow on twitch, or just a select few from a list that you provide, so you can keep an archive of the intellectual and informative twitch chats of your favorite streamers.
 
 # Features
 
