@@ -34,7 +34,7 @@ def read_channels():
             this_line = this_line.replace(' ', '').replace('\n', '').lower()
             if this_line == '':
                 break
-            if this_line[0] == "#":
+            if this_line[0] == ";":
                 continue
             channel_list.append(this_line)
     return channel_list

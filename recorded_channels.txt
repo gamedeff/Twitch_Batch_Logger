@@ -1,8 +1,10 @@
-_nkekev_1419556283846
+; add the channels you want to log
+; one channel per line
+
 dansgaming
 zfg1
 nintendo
-aftu476cnd
+hyuokjh
 _beefhash_1419320687531
 twitchplayspokemon
 witwix
