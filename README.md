@@ -78,7 +78,10 @@ The rest is the same with Option 1
 
 This program should take minimum amount of memory and CPU usage while running.
 
-While logging 82 channels on Raspberry Pi, 
+While logging 82 channels on Raspberry Pi 2 with 1GB memory and 900MHz ARM Cortex-A7 CPU, the program uses around 4.5MB of memory per logger and almost no CPU usage at all, with load average below 0.05
+
+The resource impact should be even less when running on a proper PC.
 
 ![alt tag](http://i.imgur.com/36PxDnc.png)
 
+I do recommend using a Raspberry Pi 2 as a logging machine and let this program run 24/7, this way you have a complete log of twitch chat, and avoid the cost of running a full-sized PC.
