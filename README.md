@@ -46,5 +46,7 @@ Run `python3 log_all.py` in your terminal.
 
 The program will search for all your followed channels and group chats you're in and add loggers for each of them. It might take a while depending on the number of channels you follow.
 
+It will also add/remove loggers automatically as you follow/unfollow channels.
+
 ![alt tag](http://i.imgur.com/Z3jmhEC.png)
 
