@@ -57,7 +57,7 @@ def add_logger(channel, channel_type):
     if channel not in running_logger:
         print("spawning logger for " + channel)
         logger_path = current_directory + "/comment_logger.py"
-        running_logger[channel] = subprocess.Popen([sys.executable,"-u", logger_path, channel, channel_type], stdout=devnull)
+        running_logger[channel] = subprocess.Popen([sys.executable, "-u", logger_path, channel, channel_type], stdout=devnull)
         time.sleep(0.5)
 
 # kill all running loggers then exit upon keyboard interrupt
@@ -80,7 +80,7 @@ for item in channel_list:
     print(item + " ", end = "")
     channel_type = channel_type_check(item)
     if channel_type == "":
-        print(" doesn't seem to exist, skipped")
+        print(" doesn't exist, skipped")
         continue
     print("...ok")
     channel_type_dict[item] = channel_type
