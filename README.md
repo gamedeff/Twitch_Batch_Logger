@@ -29,3 +29,5 @@ Raspbian on Raspberry Pi already has Python 3.2 so it should work out of the box
 ## Setting up your configure file
 
 * Open config.txt in your favorite text editor
+
+* Replace *username* field with your own twitch username and 
