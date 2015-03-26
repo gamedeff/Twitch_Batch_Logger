@@ -185,8 +185,8 @@ last_flush = current_time()
 # update loop
 while 1:
 	print("\nupdating on " + time.strftime("%Y/%m/%d") + ' ' + time.strftime("%H:%M:%S"))
-	# check for unfollowed channels every 2 hours
-	if current_time() - last_flush > 2 * one_hour:
+	# check for unfollowed channels every 4 hours
+	if current_time() - last_flush > 4 * one_hour:
 		follow_update(twitch_username, flush = True)
 		last_flush = current_time()
 	else:
