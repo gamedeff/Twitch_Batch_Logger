@@ -26,4 +26,6 @@ Raspbian on Raspberry Pi already has Python 3.2 so it should work out of the box
 
 # How To Use
 
-## Setting up the configure file
+## Setting up your configure file
+
+* Open config.txt in your favourite text editor
