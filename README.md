@@ -46,7 +46,7 @@ Run `python3 log_all.py` in your terminal.
 
 The program will search for all your followed channels and group chats you're in and add loggers for each of them. It might take a while depending on the number of channels you follow.
 
-It will also add/remove loggers automatically as you follow/unfollow channels.
+It will also add/remove loggers automatically as you follow/unfollow channels on Twitch.
 
 ![alt tag](http://i.imgur.com/Z3jmhEC.png)
 
@@ -58,7 +58,7 @@ Inside which are your intellectual and informative twitch chat logs
 
 ![alt tag](http://i.imgur.com/GGHD6O6.png)
 
-To stop the program Press Control + C.
+To stop the program press Control + C.
 
 ### Option 2: Only log channels from a list you provide.
 
