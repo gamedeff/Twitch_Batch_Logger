@@ -25,3 +25,5 @@ Download and install the latest version at https://www.python.org/downloads/
 Raspbian on Raspberry Pi already has Python 3.2 so it should work out of the box.
 
 # How To Use
+
+## Setting up the configure file
