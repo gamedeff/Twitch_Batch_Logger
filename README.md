@@ -19,4 +19,5 @@ A lightweight Twitch chat logger that can keep a record of all channels and grou
 # Requirements
 
 Only Python 3.2+ is needed.
+
 Download and install the latest version at https://www.python.org/downloads/
