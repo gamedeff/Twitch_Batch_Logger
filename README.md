@@ -58,4 +58,9 @@ Inside which are your intellectual and informative twitch chat logs
 
 ![alt tag](http://i.imgur.com/GGHD6O6.png)
 
+To stop the program Press Control + C.
+
+### Option 2: Only log channels from a list you provide.
+
+
 
