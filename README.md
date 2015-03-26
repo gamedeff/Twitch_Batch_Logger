@@ -62,5 +62,14 @@ To stop the program press Control + C.
 
 ### Option 2: Only log channels from a list you provide.
 
+Open recorded_channels.txt and add channels you wish to log, one channel per line.
 
+![alt tag](http://i.imgur.com/vzkTpgQ.png)
 
+Run `python3 log_selected.py` in your terminal.
+
+The program will verify each channel to make sure it exists and determine its type, then launch chat logger for each of them.
+
+![alt tag](http://i.imgur.com/GVF9u7M.png)
+
+The rest is the same with Option 1
