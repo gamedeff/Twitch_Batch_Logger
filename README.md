@@ -76,3 +76,6 @@ The rest is the same with Option 1
 
 # Resource Usage
 
+This program should take minimum amount of memory and CPU usage while running.
+
+While logging 82 channels on Raspberry Pi, 
