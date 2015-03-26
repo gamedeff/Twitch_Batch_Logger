@@ -54,7 +54,7 @@ Once logging starts you should see the text file of your followed channels in ./
 
 ![alt tag](http://i.imgur.com/GLzM6nk.png)
 
-Inside which is your intellectual and informative twitch chat
+Inside which are your intellectual and informative twitch chat logs
 
 ![alt tag](http://i.imgur.com/GGHD6O6.png)
 
