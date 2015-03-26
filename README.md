@@ -52,9 +52,9 @@ It will also add/remove loggers automatically as you follow/unfollow channels.
 
 Once logging starts you should see the text file of your followed channels in ./comment_log folder
 
-![alt tag](http://i.imgur.com/2O388Ap.png)
+![alt tag](http://i.imgur.com/GLzM6nk.png)
 
-Inside which is your intellectual and informative twitch chat log
+Inside which is your intellectual and informative twitch chat
 
 ![alt tag](http://i.imgur.com/GGHD6O6.png)
 
