@@ -1,9 +1,15 @@
 # Features
 
-* Log all your followed Twitch channels and group chats.
+* Log all your followed Twitch channels and group chats
 
-* Or log from a list of select channels that you provide.
+* Or log from a list of select channels that you provide
 
-* Only Python 3.2+ is needed, no external libraries required.
+* Option to log chat metadata (user color, sub notification, timeout events, etc.)
 
-* Cross platform. tested on Windows 7, Mac OS X Yosemite, and Raspbian on Raspberry Pi.
+* Configurable timestamp formats
+
+* Low CPU and memory usage
+
+* Only Python 3.2+ is needed
+
+* Tested working on Windows 7, OS X Yosemite, and Raspbian on Raspberry Pi
