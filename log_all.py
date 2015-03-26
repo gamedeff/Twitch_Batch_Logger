@@ -34,6 +34,8 @@ def stop():
     temp = deepcopy(running_logger)
     for key in temp:
         remove_logger(key)
+    print("killing follow_updater...")
+    follow_updater.kill()
     sys.exit(0)
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -53,7 +55,7 @@ followed_channels_prev = set()
 channel_type = {}
 running_logger = {}
 devnull = open(os.devnull, 'w')
-subprocess.Popen([sys.executable, "-u", current_directory + "/follow_updater.py"])
+follow_updater = subprocess.Popen([sys.executable, "-u", current_directory + "/follow_updater.py"])
 
 try:
     while 1:
