@@ -1,8 +1,8 @@
 # Features
 
-* Log all Twitch channels you follow and group chats you're in with one click.
+* Log all your followed Twitch channels and group chats.
 
-* If that's too much you can also configure it to log a list of select channels that you provide.
+* Or log from a list of select channels that you provide.
 
 * Only Python 3.2+ is needed, no external libraries required.
 
