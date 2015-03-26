@@ -42,5 +42,6 @@ Raspbian on Raspberry Pi already has Python 3.2 so it should work out of the box
 
 ### Log all channels and group chats you follow on Twitch
 
-Type 
-` python3 log_all.py
+Type
+ 
+`python3 log_all.py
