@@ -1,16 +1,19 @@
 [Settings]
 
 ; Your twitch username
-username = dekuNukem
+username = twitch_plays_3ds
  
 ; Your twitch oauth, grab yours at www.twitchapps.com/tmi
-oauth = oauth:x5qauh1fniapl5j7vqeaj4ep7p6k1v
+oauth = oauth:d8bek9edf0b9jp33lzquzi77btk8md
 
 ; Change this to 1 to save additional chat information
 ; including message color, user identity(mod/sub/staff), 
 ; sub notification, timeout/submode/clearchat/slowmode 
 ; notifications, etc.
 record_raw = 0
+
+; set it to 1 to log your own channel
+log_self = 0
 
 ; what kind of timestamp to use
 ; 0 for unix timestamp: 1427139635.0058

@@ -44,6 +44,7 @@ if os.path.isfile(config_path):
     config = configparser.ConfigParser()
     config.read(config_path)
     twitch_username = config.get('Settings', 'username').replace(' ', '').lower()
+    log_self = config.getboolean('Settings', 'log_self')
 else:
     print("config.txt not found")
     sys.exit(1)
@@ -58,6 +59,9 @@ devnull = open(os.devnull, 'w')
 follow_updater = subprocess.Popen([sys.executable, "-u", current_directory + "/follow_updater.py"])
 
 try:
+    if log_self:
+        channel_type[twitch_username] = 'r'
+        add_logger(twitch_username)
     while 1:
         # grab an update of followed channels
         try:
@@ -81,7 +85,7 @@ try:
         # spawn loggers for newly followed channels
         for item in new_followed:
             add_logger(item)
-
+            
         time.sleep(30)
         
 except KeyboardInterrupt:
