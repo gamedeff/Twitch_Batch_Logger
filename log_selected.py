@@ -70,7 +70,10 @@ def stop():
     sys.exit(0)
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
-channel_list = read_channels()
+if len(sys.argv) < 2:
+    channel_list = read_channels()
+else:
+    channel_list = sys.argv[1:] # get everything after the script name
 channel_type_dict = {}
 running_logger = {}
 devnull = open(os.devnull, 'w')

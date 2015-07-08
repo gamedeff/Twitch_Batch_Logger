@@ -1,10 +1,10 @@
 [Settings]
 
 ; Your twitch username
-username = twitch_plays_3ds
+username = gamedeff
  
 ; Your twitch oauth, grab yours at www.twitchapps.com/tmi
-oauth = oauth:d8bek9edf0b9jp33lzquzi77btk8md
+oauth = oauth:j26lib90fnz4cf9exslhe9yp8dg6nt
 
 ; Change this to 1 to save additional chat information
 ; including message color, user identity(mod/sub/staff), 
