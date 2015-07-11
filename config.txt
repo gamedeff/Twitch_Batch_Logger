@@ -10,7 +10,7 @@ oauth = oauth:j26lib90fnz4cf9exslhe9yp8dg6nt
 ; including message color, user identity(mod/sub/staff), 
 ; sub notification, timeout/submode/clearchat/slowmode 
 ; notifications, etc.
-record_raw = 0
+record_raw = 1
 
 ; set it to 1 to log your own channel
 log_self = 0

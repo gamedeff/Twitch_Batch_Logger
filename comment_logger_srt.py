@@ -6,7 +6,9 @@ import socket
 import irc_bot
 import configparser
 
-import pysubs2
+from pysrt import SubRipFile
+from pysrt import SubRipItem
+from pysrt import SubRipTime
 
 def iso8601_utc_now():
 	return datetime.utcnow().isoformat(sep='T') + "Z"
@@ -88,12 +90,11 @@ if record_raw:
 raw_log_path = current_directory + '/comment_log_raw/' + chat_channel + '.txt'
 log_path = current_directory + '/comment_log/' + chat_channel + '.txt'
 
-subs_log_path = current_directory + '/comment_log/' + chat_channel + '.ass'
+srt_log_path = current_directory + '/comment_log/' + chat_channel + '.srt'
 
 bot = irc_bot.irc_bot(username, oauth, chat_channel, chat_server[0], chat_server[1], twitchclient_version = twitchclient_version)
 
-subs = pysubs2.SSAFile()
-i = 0
+outsrt = SubRipFile()
 
 text = ''
 
@@ -101,10 +102,10 @@ while 1:
 	raw_msg_list = bot.get_message()
 	if len(raw_msg_list) > 0:
 		if len(text) > 0:
-			end = pysubs2.time.make_time(ms=datetime.now().microsecond)
-			subs.insert(i, pysubs2.SSAEvent(start=start, end=end, text=text))
-			i = i + 1
-		start = pysubs2.time.make_time(ms=datetime.now().microsecond)
+			end = SubRipTime.from_time(datetime.now())
+			item = SubRipItem(0, start, end, text)
+			outsrt.append(item)
+		start = SubRipTime.from_time(datetime.now())
 		text = ''
 		timestamp = get_timestamp(timestamp_format)
 		for item in raw_msg_list:
@@ -115,6 +116,7 @@ while 1:
 				safe_print(chat_channel + " " + username + ": " + message)
 				log_add(log_path, timestamp + ' ' + username + ': ' + message + '\n')
 				text += username + ": " + message + '\n'
-				subs.save(path=subs_log_path, encoding='utf-8')
+				outsrt.clean_indexes()
+				outsrt.save(srt_log_path, encoding='utf-8')
 
 
