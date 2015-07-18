@@ -102,7 +102,7 @@ while 1:
 	if len(raw_msg_list) > 0:
 		if len(text) > 0:
 			end = pysubs2.time.make_time(ms=datetime.now().microsecond)
-			subs.insert(i, pysubs2.SSAEvent(start=start, end=end, text=text))
+			subs.insert(i, pysubs2.SSAEvent(start=start, end=end, text=text.replace('\\', '\\\\')))
 			i = i + 1
 		start = pysubs2.time.make_time(ms=datetime.now().microsecond)
 		text = ''
